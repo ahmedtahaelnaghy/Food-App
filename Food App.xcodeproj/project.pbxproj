@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		FC6D6ACD2902E2D900F26FEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D6ACC2902E2D900F26FEB /* AppDelegate.swift */; };
 		FC6D6ACF2902E2D900F26FEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D6ACE2902E2D900F26FEB /* SceneDelegate.swift */; };
-		FC6D6AD12902E2D900F26FEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D6AD02902E2D900F26FEB /* ViewController.swift */; };
-		FC6D6AD42902E2D900F26FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6D6AD22902E2D900F26FEB /* Main.storyboard */; };
 		FC6D6AD72902E2DA00F26FEB /* Food_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC6D6AD52902E2D900F26FEB /* Food_App.xcdatamodeld */; };
 		FC6D6AD92902E2E300F26FEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6D6AD82902E2E300F26FEB /* Assets.xcassets */; };
 		FC6D6ADC2902E2E300F26FEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6D6ADA2902E2E300F26FEB /* LaunchScreen.storyboard */; };
 		FC6D6AE72902E2E400F26FEB /* Food_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D6AE62902E2E400F26FEB /* Food_AppTests.swift */; };
 		FC6D6AF12902E2E400F26FEB /* Food_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D6AF02902E2E400F26FEB /* Food_AppUITests.swift */; };
 		FC6D6AF32902E2E400F26FEB /* Food_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D6AF22902E2E400F26FEB /* Food_AppUITestsLaunchTests.swift */; };
+		FC6D6B062902E69900F26FEB /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D6B042902E69900F26FEB /* SplashVC.swift */; };
+		FC6D6B072902E69900F26FEB /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC6D6B052902E69900F26FEB /* SplashVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,6 @@
 		FC6D6AC92902E2D900F26FEB /* Food App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6D6ACC2902E2D900F26FEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC6D6ACE2902E2D900F26FEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC6D6AD02902E2D900F26FEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FC6D6AD32902E2D900F26FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC6D6AD62902E2D900F26FEB /* Food_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Food_App.xcdatamodel; sourceTree = "<group>"; };
 		FC6D6AD82902E2E300F26FEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC6D6ADB2902E2E300F26FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		FC6D6AEC2902E2E400F26FEB /* Food AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6D6AF02902E2E400F26FEB /* Food_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_AppUITests.swift; sourceTree = "<group>"; };
 		FC6D6AF22902E2E400F26FEB /* Food_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC6D6B042902E69900F26FEB /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		FC6D6B052902E69900F26FEB /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +101,10 @@
 		FC6D6ACB2902E2D900F26FEB /* Food App */ = {
 			isa = PBXGroup;
 			children = (
-				FC6D6ACC2902E2D900F26FEB /* AppDelegate.swift */,
-				FC6D6ACE2902E2D900F26FEB /* SceneDelegate.swift */,
-				FC6D6AD02902E2D900F26FEB /* ViewController.swift */,
-				FC6D6AD22902E2D900F26FEB /* Main.storyboard */,
-				FC6D6AD82902E2E300F26FEB /* Assets.xcassets */,
-				FC6D6ADA2902E2E300F26FEB /* LaunchScreen.storyboard */,
-				FC6D6ADD2902E2E300F26FEB /* Info.plist */,
-				FC6D6AD52902E2D900F26FEB /* Food_App.xcdatamodeld */,
+				FC6D6B012902E56200F26FEB /* Configuration */,
+				FC6D6B002902E52500F26FEB /* Resources */,
+				FC6D6AFF2902E50300F26FEB /* Core */,
+				FC6D6B022902E5E900F26FEB /* Screens */,
 			);
 			path = "Food App";
 			sourceTree = "<group>";
@@ -128,6 +124,50 @@
 				FC6D6AF22902E2E400F26FEB /* Food_AppUITestsLaunchTests.swift */,
 			);
 			path = "Food AppUITests";
+			sourceTree = "<group>";
+		};
+		FC6D6AFF2902E50300F26FEB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FC6D6ACC2902E2D900F26FEB /* AppDelegate.swift */,
+				FC6D6ACE2902E2D900F26FEB /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FC6D6B002902E52500F26FEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC6D6ADA2902E2E300F26FEB /* LaunchScreen.storyboard */,
+				FC6D6AD82902E2E300F26FEB /* Assets.xcassets */,
+				FC6D6AD52902E2D900F26FEB /* Food_App.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC6D6B012902E56200F26FEB /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FC6D6ADD2902E2E300F26FEB /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		FC6D6B022902E5E900F26FEB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FC6D6B032902E66200F26FEB /* Splash */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FC6D6B032902E66200F26FEB /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				FC6D6B042902E69900F26FEB /* SplashVC.swift */,
+				FC6D6B052902E69900F26FEB /* SplashVC.xib */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC6D6ADC2902E2E300F26FEB /* LaunchScreen.storyboard in Resources */,
+				FC6D6B072902E69900F26FEB /* SplashVC.xib in Resources */,
 				FC6D6AD92902E2E300F26FEB /* Assets.xcassets in Resources */,
-				FC6D6AD42902E2D900F26FEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC6D6AD12902E2D900F26FEB /* ViewController.swift in Sources */,
+				FC6D6B062902E69900F26FEB /* SplashVC.swift in Sources */,
 				FC6D6AD72902E2DA00F26FEB /* Food_App.xcdatamodeld in Sources */,
 				FC6D6ACD2902E2D900F26FEB /* AppDelegate.swift in Sources */,
 				FC6D6ACF2902E2D900F26FEB /* SceneDelegate.swift in Sources */,
@@ -301,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FC6D6AD22902E2D900F26FEB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC6D6AD32902E2D900F26FEB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FC6D6ADA2902E2E300F26FEB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,10 +475,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YHNN4VPXK7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Food App/Info.plist";
+				INFOPLIST_FILE = "/Users/ahmedtaha/Desktop/My Projects/Food App/Food App/Configuration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,10 +502,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YHNN4VPXK7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Food App/Info.plist";
+				INFOPLIST_FILE = "/Users/ahmedtaha/Desktop/My Projects/Food App/Food App/Configuration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

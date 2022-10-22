@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="Food_App" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="cZj-dE-YdS" id="M5N-De-Emi"/>
+                <outlet property="foodTableView" destination="hoQ-qM-Oeb" id="Mqa-e0-xIY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hoQ-qM-Oeb">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="810"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZj-dE-YdS" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                    <rect key="frame" x="170" y="397" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="446-7Y-kBD"/>
+                        <constraint firstAttribute="height" constant="50" id="v9j-Kc-Kco"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cZj-dE-YdS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1EP-pH-eML"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hoQ-qM-Oeb" secondAttribute="bottom" id="7Sc-4Y-eAz"/>
+                <constraint firstItem="cZj-dE-YdS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="WY8-E1-rAu"/>
+                <constraint firstItem="hoQ-qM-Oeb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fqt-2s-6hu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hoQ-qM-Oeb" secondAttribute="trailing" id="pVx-II-3ZS"/>
+                <constraint firstItem="hoQ-qM-Oeb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zEB-NI-h9D"/>
+            </constraints>
+            <point key="canvasLocation" x="136.92307692307691" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

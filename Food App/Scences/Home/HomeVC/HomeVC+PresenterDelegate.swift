@@ -21,6 +21,6 @@ extension HomeVC: HomeViewProtocol {
     }
     
     func fetchDataFailure(error: String) {
-        print(error)
+        showAlert(message: error)
     }
 }

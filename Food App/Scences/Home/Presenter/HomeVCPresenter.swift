@@ -12,6 +12,7 @@ protocol HomeViewProtocol: AnyObject {
     func hideIndicator()
     func fetchDataSucess()
     func fetchDataFailure(error: String)
+    func navigateToFoodDetailsScreen(foodCategory: Category)
 }
 
 protocol FoodCellViewProtocol {
@@ -23,7 +24,7 @@ class HomeVCPresenter {
     
     private weak var view: HomeViewProtocol?
     private let interactor = FoodInteractor()
-    private var food = [Category]()
+    private var foodCategory = [Category]()
     
     init(view: HomeViewProtocol) {
         self.view = view
@@ -40,9 +41,7 @@ class HomeVCPresenter {
             self.view?.hideIndicator()
             switch result {
             case .success(let data):
-                print(data.categories)
-//                guard let data = data else { return }
-                self.food = data.categories
+                self.foodCategory = data.categories
                 self.view?.fetchDataSucess()
             case .failure(let error):
                 self.view?.fetchDataFailure(error: error.localizedDescription)
@@ -51,13 +50,17 @@ class HomeVCPresenter {
     }
     
     func getFoodCount() -> Int {
-        return food.count
+        return foodCategory.count
     }
     
     func configureCell(cell: FoodCellViewProtocol, index: Int) {
-        let food = food[index]
+        let food = foodCategory[index]
         cell.displayImage(image: food.image)
         cell.displayName(name: food.name)
     }
     
+    func didSelectRow(index: Int) {
+        let food = foodCategory[index]
+        view?.navigateToFoodDetailsScreen(foodCategory: food)
+    }
 }
